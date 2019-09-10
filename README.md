@@ -12,6 +12,7 @@ I used Python and the PyTest framework. I separated each function into it's own 
 5. 
 
 ### Test Suites & Coverage
+ - [X] All Test Suites Pass
 ###### - [X] All Test Suites Pass
 ![logo](https://github.com/changrif/CIS4930_PPA1/blob/master/assets/test_suites.png)
 
@@ -45,8 +46,14 @@ I used Python and the PyTest framework. I separated each function into it's own 
 ###### (1) BMI Function
 ![logo](https://github.com/changrif/CIS4930_PPA1/blob/master/assets/bmi.gif)
 
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
 ###### (4) Split the Tip Function
 ![logo](https://github.com/changrif/CIS4930_PPA1/blob/master/assets/tip.gif)
 
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
 ##### Full Program Execution
 ![logo](https://github.com/changrif/CIS4930_PPA1/blob/master/assets/full.gif)
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
