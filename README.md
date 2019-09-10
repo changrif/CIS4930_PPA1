@@ -12,11 +12,10 @@ I used Python and the PyTest framework. I separated each function into it's own 
 5. 
 
 ### Test Suites & Coverage
- - [X] All Test Suites Pass
-###### - [X] All Test Suites Pass
+- [X] All Test Suites Pass
 ![logo](https://github.com/changrif/CIS4930_PPA1/blob/master/assets/test_suites.png)
 
-###### - [X] Test Coverage Report
+- [X] Test Coverage Report
 ![logo](https://github.com/changrif/CIS4930_PPA1/blob/master/assets/test_coverage.png)
 
 ### Discussion Questions
