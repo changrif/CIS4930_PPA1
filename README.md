@@ -5,11 +5,21 @@ I used Python and the PyTest framework. I separated each function into it's own 
 
 ### Setup
 
-1. 
-2. 
-3. 
-4. 
-5. 
+Python v.2.7.10, PyTest v4.6.5 - tested locally on MacOS with Terminal as well as fresh Windows 10 build
+
+1. Install PIP and Python following the instructions in the link: https://www.codeooze.com/coding/python-2715-windows-install/
+  - Check in the command prompt using 'python -V' to ensure it has been installed properly
+  - Alternatively, install PIP following the link and executing the get-pip.py command in the prompt: https://www.makeuseof.com/tag/install-pip-for-python/
+2. Install PyTest with the command 'pip install -U pytest'
+  - http://doc.pytest.org/en/latest/getting-started.html
+3. Install PyTest-Cov with the command 'pip install pytest-cov'
+  - https://pypi.org/project/pytest-cov/
+4. Clone the repo using the https link: https://github.com/changrif/CIS4930_PPA1.git and command 'git clone *link*'
+
+#### Execution
+5. The main program can be executed from the root project directory using the command 'python main/main.py'
+6. The tests can be executed individually from the root project directory using the command 'pytest tests/test_*function*.py'
+7. The full test suite can be executed with coverage from the root directory using the command 'pytest --cov=main tests/'
 
 ### Test Suites & Coverage
 - [X] All Test Suites Pass
