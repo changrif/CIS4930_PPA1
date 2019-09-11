@@ -17,9 +17,9 @@ Python v.2.7.10, PyTest v4.6.5 - tested locally on MacOS with Terminal as well a
 4. Clone the repo using the https link: https://github.com/changrif/CIS4930_PPA1.git and command `git clone *link*`
 
 #### Execution
-5. The main program can be executed from the root project directory using the command 'python main/main.py'
-6. The tests can be executed individually from the root project directory using the command 'pytest tests/test_*function*.py'
-7. The full test suite can be executed with coverage from the root directory using the command 'pytest --cov=main tests/'
+5. The main program can be executed from the root project directory using the command `python main/main.py`
+6. The tests can be executed individually from the root project directory using the command `pytest tests/test_*function*.py`
+7. The full test suite can be executed with coverage from the root directory using the command `pytest --cov=main tests/`
 
 ### Test Suites & Coverage
 - [X] All Test Suites Pass
