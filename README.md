@@ -47,8 +47,8 @@ I used Python and the PyTest framework. I separated each function into it's own 
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-###### (4) Split the Tab Function
-![logo](https://github.com/changrif/CIS4930_PPA1/blob/master/assets/tip.gif)
+###### (2) Shortest Distance Function
+![logo](https://github.com/changrif/CIS4930_PPA1/blob/master/assets/shortestDistance.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
