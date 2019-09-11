@@ -23,7 +23,7 @@ def calculate(feet, inches, weight):
     
     if feet < 0 or inches < 0 or (feet == 0 and inches == 0):
         raise ZeroHeightError
-        
+    
     weightInKg = weight * 0.45
     heightInM = ((feet * 12) + inches) * 0.025
     bmi = round((weightInKg) / (heightInM * heightInM), 1)

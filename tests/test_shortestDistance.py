@@ -2,40 +2,8 @@ import pytest
 
 from main import shortestDistance
 
-def test_shortestDistance_returns_float():
-    x1 = 5
-    y1 = 10
-    x2 = 10
-    y2 = 10
-    
-    assert isinstance(shortestDistance.calculate(x1, y1, x2, y2), float)
-    
-def test_shortestDistance_positive():
-    # Shortest distance is 5
-    x1 = 5
-    y1 = 10
-    x2 = 10
-    y2 = 10
-    
-    assert shortestDistance.calculate(x1, y1, x2, y2) == 5.0
-    
-def test_shortestDistance_negative():
-    # Shortest distance is 5
-    x1 = -5
-    y1 = -10
-    x2 = -15
-    y2 = -15
-    
-    assert shortestDistance.calculate(x1, y1, x2, y2) == 11.2
-    
-def test_shortestDistance_zero():
-    # Shortest distance is 5
-    x1 = 0
-    y1 = 0
-    x2 = 0
-    y2 = 0
-    
-    assert shortestDistance.calculate(x1, y1, x2, y2) == 0.0
+def test_shortestDistance_returns_float():  
+    assert isinstance(shortestDistance.calculate(10, 10, 10, 10), float)
     
 def test_shortestDistance_invalid_input_x1():
     with pytest.raises(shortestDistance.InvalidInputError):
@@ -52,3 +20,18 @@ def test_shortestDistance_invalid_input_x2():
 def test_shortestDistance_invalid_input_y2():
     with pytest.raises(shortestDistance.InvalidInputError):
         shortestDistance.calculate(0.0, 0, 0, "y2")
+        
+def test_shortestDistance_floatinput():
+    assert shortestDistance.calculate(5.16, 6.32, 9.103455, 7.643) == 4.2
+    
+def test_shortestDistance_positive():
+    assert shortestDistance.calculate(5, 10, 10, 9) == 5.1
+    
+def test_shortestDistance_negative():
+    assert shortestDistance.calculate(-5, -10, -15, -14) == 10.8
+    
+def test_shortestDistance_zero():
+    assert shortestDistance.calculate(0, 0, 0, 0) == 0.0
+
+def test_shortestDistance_roundedToOneDecimalPlace():
+    assert (str(shortestDistance.calculate(5, 10, 10, 9))[-2])[0] == "."

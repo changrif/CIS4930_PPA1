@@ -13,7 +13,7 @@ def calculate(x1, y1, x2, y2):
     except Exception:
         raise InvalidInputError
     
-    xDiffSq = (x2 - x1) * (x2 - x1);
-    yDiffSq = (y2 - y1) * (y2 - y1);
+    xDiffSq = (x2 - x1) * (x2 - x1)
+    yDiffSq = (y2 - y1) * (y2 - y1)
     
-    return round(math.sqrt(xDiffSq + yDiffSq), 1);
+    return round(math.sqrt(xDiffSq + yDiffSq), 1)
