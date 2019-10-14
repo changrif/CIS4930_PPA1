@@ -18,11 +18,11 @@ pipeline {
                 }
             }
             steps {
-                sh 'pytest --verbose --cov=main tests/' 
+                sh 'pytest --verbose --junit-xml test-reports/results.xml --cov=main tests/' 
             }
             post {
                 always {
-                    junit 'test-reports/*.xml' 
+                    junit 'test-reports/results.xml' 
                 }
             }
         }
