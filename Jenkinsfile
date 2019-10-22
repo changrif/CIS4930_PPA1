@@ -13,11 +13,6 @@ pipeline {
             }
         }
         stage('Unit Tests') { 
-            agent {
-                docker {
-                    image 'qnib/pytest' 
-                }
-            }
             steps {
                 sh 'pytest --verbose --junit-xml test_reports/unit_tests.xml --cov=main unit_tests/' 
             }
@@ -28,11 +23,6 @@ pipeline {
             }
         }
         stage('DB Tests') { 
-            agent {
-                docker {
-                    image 'qnib/pytest' 
-                }
-            }
             steps {
                 sh 'pytest --verbose --junit-xml test_reports/db_tests.xml db_tests/' 
             }
@@ -43,11 +33,6 @@ pipeline {
             }
         }
         stage('API Tests') { 
-            agent {
-                docker {
-                    image 'qnib/pytest' 
-                }
-            }
             steps {
                 sh 'pytest --verbose --junit-xml test_reports/api_tests.xml api_tests/' 
             }
