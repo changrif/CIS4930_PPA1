@@ -8,7 +8,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'python3 -m py_compile main/bmi.py main/email.py main/shortestDistance.py main/tab.py main/main.py api/api.py db/db.py'
+                sh 'python3 -m py_compile main/bmi.py main/email.py main/shortestDistance.py main/tab.py main/main.py api/api.py main/db.py console/console.py'
             }
         }
         stage('Unit Tests') { 
