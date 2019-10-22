@@ -1,12 +1,11 @@
 pipeline {
-    agent none
+    agent {
+        docker {
+            image 'python:3-alpine'
+        }
+    }
     stages {
         stage('Build') {
-            agent {
-                docker {
-                    image 'python:3-alpine'
-                }
-            }
             steps {
                 sh 'pip install -r requirements.txt'
                 sh 'python3 -m py_compile main/bmi.py main/email.py main/shortestDistance.py main/tab.py main/main.py api/api.py main/db.py console/console.py'
