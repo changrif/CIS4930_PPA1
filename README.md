@@ -31,7 +31,7 @@ Python v.2.7.10, PyTest v4.6.5
 
 #### Execution
 11. The main program can be executed from the root project directory using the command `python -m main.main`
-  - Only the console program will be visible, but the api is running in a background thread available at `http://localhost:5000`
+  - Only the console program will be visible, but the api is running in a background thread available at `http://localhost:5000`. It runs for the life of the console application and exits with the main thread when option '5' is chosen.
   - BMI: `http://localhost:5000/bmi`
     - Example: `http://localhost:5000/bmi?feet=5&inches=10&weight=150`
   - EMAIL: `http://localhost:5000/email`
