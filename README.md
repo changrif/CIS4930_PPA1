@@ -43,10 +43,10 @@ Python v.2.7.10, PyTest v4.6.5
 ![logo](https://github.com/changrif/CIS4930_PPA1/blob/master/assets/ci-1.gif)
 
 - [X] DB Test Stage added to CI Pipeline
-![logo](https://github.com/changrif/CIS4930_PPA1/blob/master/assets/ci-2.png)
+![logo](https://github.com/changrif/CIS4930_PPA1/blob/master/assets/ci-2.gif)
 
 - [X] API Test Stage added to CI Pipeline
-![logo](https://github.com/changrif/CIS4930_PPA1/blob/master/assets/ci-3.png)
+![logo](https://github.com/changrif/CIS4930_PPA1/blob/master/assets/ci-3.gif)
 
 ### Functionality & CI Screencast
 ![logo](https://github.com/changrif/CIS4930_PPA1/blob/master/assets/ppa2.gif)
