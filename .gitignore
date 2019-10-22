@@ -3,6 +3,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+test_reports/
 
 # Auto detect text files and perform LF normalization
 * text=auto

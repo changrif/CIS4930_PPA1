@@ -1,2 +1,2 @@
 [run]
-omit = main/main.py
+omit = main/main.py, main/db.py
