@@ -1,3 +1,59 @@
+# CIS4930_PPA2: DB & API Testing
+
+### Installation & Setup
+
+Python v.2.7.10, PyTest v4.6.5
+
+1. Install PIP and Python following the instructions in the link: https://www.codeooze.com/coding/python-2715-windows-install/
+  - Check in the command prompt using `python -V` to ensure it has been installed properly
+  - Alternatively, install PIP following the link and executing the get-pip.py command in the prompt: https://www.makeuseof.com/tag/install-pip-for-python/
+
+#### Libraries
+
+2. Install PyTest with the command `pip install -U pytest`
+  - http://doc.pytest.org/en/latest/getting-started.html
+3. Install PyTest-Cov with the command `pip install pytest-cov`
+  - https://pypi.org/project/pytest-cov/
+4. Install Flask `pip install -U Flask`
+5. Install Requests `pip install requests`
+6. Install Mock `pip install mock`
+7. Install pymongo `pip install pymongo`
+
+#### Repo
+
+9. Clone the repo using the https link: https://github.com/changrif/CIS4930_PPA1.git and command `git clone *link*`
+
+#### Starting MongoDB in a docker container
+
+10. The database can be started using the following command: `docker run -d -p 27017:27017 --name *name* mongo`
+  - Start it again using: `docker start *name*`
+  - Stop it using: `docker stop *name*`
+
+#### Execution
+11. The main program can be executed from the root project directory using the command `python -m main.main`
+12. The tests can be executed individually from the root project directory using the command 
+  - `pytest unit_tests/test_*function*.py`
+  - `pytest db_tests/test_db.py`
+  - `pytest api_tests/test_api.py`
+
+13. The full unit test suite can be executed with coverage from the root directory using the command `pytest --cov=main unit_tests/`
+
+### Test Suites & CI Pipeline
+- [X] PPA1 Test Suite in Jenkins CI Pipeline
+![logo](https://github.com/changrif/CIS4930_PPA1/blob/master/assets/ci-1.gif)
+
+- [X] DB Test Stage added to CI Pipeline
+![logo](https://github.com/changrif/CIS4930_PPA1/blob/master/assets/ci-2.png)
+
+- [X] API Test Stage added to CI Pipeline
+![logo](https://github.com/changrif/CIS4930_PPA1/blob/master/assets/ci-3.png)
+
+### Functionality & CI Screencast
+![logo](https://github.com/changrif/CIS4930_PPA1/blob/master/assets/ppa2.gif)
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+---
+
 # CIS4930_PPA1: Unit Testing
 
 ### Naming Conventions
@@ -5,7 +61,7 @@ I used Python and the PyTest framework. I separated each function into it's own 
 
 ### Setup
 
-Python v.2.7.10, PyTest v4.6.5 - tested locally on MacOS with Terminal as well as fresh Windows 10 build
+Python v.2.7.10, PyTest v4.6.5
 
 1. Install PIP and Python following the instructions in the link: https://www.codeooze.com/coding/python-2715-windows-install/
   - Check in the command prompt using `python -V` to ensure it has been installed properly
