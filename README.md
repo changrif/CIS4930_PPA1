@@ -34,7 +34,7 @@ Python v.2.7.10, PyTest v4.6.5
   - Only the console program will be visible, but the api is running in a background thread available at `http://localhost:5000`
   - BMI: `http://localhost:5000/bmi`
     - Example: `http://localhost:5000/bmi?feet=5&inches=10&weight=150`
-  - EMAIL: `http://localhost:5000/bmi`
+  - EMAIL: `http://localhost:5000/email`
     - Example: `http://localhost:5000/email?address=test@gmail.com`
 12. The tests can be executed individually from the root project directory using the command 
   - `pytest unit_tests/test_*function*.py`
