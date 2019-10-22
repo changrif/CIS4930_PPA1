@@ -37,7 +37,7 @@ def bmi_console():
     weight = raw_input(" Weight (lb): ")
 
     try:
-        category, bmiNum = calculate(feet, inches, weight)
+        category, bmiNum = bmi.calculate(feet, inches, weight)
         print("\n Your BMI of : " + str(bmiNum) + " is considered " + category + "\n")
 
         db.saveBMI(feet, inches, weight, category, bmiNum)
@@ -54,7 +54,7 @@ def shortestDistance_console():
     y2 = raw_input(" y2: ")
 
     try:
-        shortestDistanceNum = calculate(x1, y1, x2, y2)
+        shortestDistanceNum = shortestDistance.calculate(x1, y1, x2, y2)
         print("\n The shortest distance between (" + x1 + ", " + y1 + ") and (" + x2 + ", " + y2 + ") is " + str(shortestDistanceNum) + "\n")
     except Exception as e:
         print("\n Try again: " + type(e).__name__ + "\n")
@@ -67,7 +67,7 @@ def email_console():
     address = raw_input(" Email: ")
 
     try:
-        verified = verify(address)
+        verified = email.verify(address)
         if verified:
             print("\n \"" + address + "\" is a valid email address.\n")
         else:
