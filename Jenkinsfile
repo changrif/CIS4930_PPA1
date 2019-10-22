@@ -21,25 +21,6 @@ pipeline {
                 }
             }
         }
-        stage('DB Tests') { 
-            steps {
-                sh 'pytest --verbose --junit-xml test_reports/db_tests.xml db_tests/' 
-            }
-            post {
-                always {
-                    junit 'test_reports/db_tests.xml' 
-                }
-            }
-        }
-        stage('API Tests') { 
-            steps {
-                sh 'pytest --verbose --junit-xml test_reports/api_tests.xml api_tests/' 
-            }
-            post {
-                always {
-                    junit 'test_reports/api_tests.xml' 
-                }
-            }
-        }
+        
     }
 }
