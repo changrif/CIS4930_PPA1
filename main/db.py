@@ -53,7 +53,7 @@ def printAllEmails():
     
     if emails.count() > 0:
         for obj in emails.find():
-            print("\n " + obj['timestamp'] + "\t Input: [email: " + obj['email'] + "]\n \t\t\t Output: [validated: " + str(obj['validated']) + "]")
+            print("\n " + obj['timestamp'] + "\t Input: [email: " + str(obj['email']) + "]\n \t\t\t Output: [validated: " + str(obj['validated']) + "]")
             
 def saveEmail(verified, address):
     emails = db.emails
