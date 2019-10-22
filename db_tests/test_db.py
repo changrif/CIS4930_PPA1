@@ -1,7 +1,6 @@
 import pytest
 from unittest import TestCase
 import mock
-import mongomock
 import datetime
 
 class Email:
