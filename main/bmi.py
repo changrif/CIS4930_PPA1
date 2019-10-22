@@ -1,5 +1,3 @@
-import db
-
 class InvalidInputError(Exception):
    """Raised when the input value is not an integer"""
    pass
@@ -11,24 +9,6 @@ class ZeroWeightError(Exception):
 class ZeroHeightError(Exception):
    """Raised when the height input value is less than or equal to zero inches"""
    pass
-
-# **********************      
-# *** CONSOLE METHOD ***
-# **********************
-def console():
-    db.printAllBMI()
-
-    feet = raw_input(" Height (ft): ")
-    inches = raw_input(" Height (in): ")
-    weight = raw_input(" Weight (lb): ")
-
-    try:
-        category, bmiNum = calculate(feet, inches, weight)
-        print("\n Your BMI of : " + str(bmiNum) + " is considered " + category + "\n")
-
-        db.saveBMI(feet, inches, weight, category, bmiNum)
-    except Exception as e:
-        print("\n Try again: " + type(e).__name__ + "\n")
 
 # ****************************************************************************************
 # *** CALCULATE METHOD - Takes in feet, inches and weight, returns bmiNum and category ***

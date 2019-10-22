@@ -12,19 +12,6 @@ class InvalidGuestsError(Exception):
    """Raised when the guests input value is not an integer greater than zero"""
    pass
 
-# **********************      
-# *** CONSOLE METHOD ***
-# **********************
-def console():
-    total = raw_input(" Total: ")
-    guests = raw_input(" Guests: ")
-
-    try:
-        totalCheck, splitAmount = calculate(total, guests)
-        print("\n Total: " + str(totalCheck) + "\n Split Between " + guests + " Guests:" + str(splitAmount) + "\n")
-    except Exception as e:
-        print("\n Try again: " + type(e).__name__ + "\n")
-
 # *****************************************************************************************
 # *** CALCULATE METHOD - Takes in total and guests, returns total and splits per person ***
 # *****************************************************************************************

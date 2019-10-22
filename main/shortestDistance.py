@@ -4,21 +4,6 @@ class InvalidInputError(Exception):
    """Raised when the input value is not an integer or float"""
    pass
 
-# **********************      
-# *** CONSOLE METHOD ***
-# **********************
-def console():
-    x1 = raw_input(" x1: ")
-    y1 = raw_input(" y1: ")
-    x2 = raw_input(" x2: ")
-    y2 = raw_input(" y2: ")
-
-    try:
-        shortestDistanceNum = calculate(x1, y1, x2, y2)
-        print("\n The shortest distance between (" + x1 + ", " + y1 + ") and (" + x2 + ", " + y2 + ") is " + str(shortestDistanceNum) + "\n")
-    except Exception as e:
-        print("\n Try again: " + type(e).__name__ + "\n")
-
 # *****************************************************************
 # *** CALCULATE METHOD - Takes in coordinates, returns distance ***
 # *****************************************************************
