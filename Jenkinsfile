@@ -8,7 +8,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'pip install -r requirements.txt'
-                sh 'python3 -m py_compile main/bmi.py main/email.py main/shortestDistance.py main/tab.py main/main.py console/console.py'
+                sh 'python3 -m py_compile main/bmi.py main/email.py main/shortestDistance.py main/tab.py main/main.py console/console.py api/api.py main/db.py '
             }
         }
         stage('Unit Tests') { 
@@ -28,6 +28,16 @@ pipeline {
             post {
                 always {
                     junit 'test_reports/db_tests.xml' 
+                }
+            }
+        }
+        stage('API Tests') { 
+            steps {
+                sh 'pytest --verbose --junit-xml test_reports/api_tests.xml api_tests/' 
+            }
+            post {
+                always {
+                    junit 'test_reports/api_tests.xml' 
                 }
             }
         }
