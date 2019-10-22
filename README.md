@@ -8,7 +8,7 @@ Python v.2.7.10, PyTest v4.6.5
   - Check in the command prompt using `python -V` to ensure it has been installed properly
   - Alternatively, install PIP following the link and executing the get-pip.py command in the prompt: https://www.makeuseof.com/tag/install-pip-for-python/
 
-#### Libraries
+#### Libraries (see requirements.txt)
 
 2. Install PyTest with the command `pip install -U pytest`
   - http://doc.pytest.org/en/latest/getting-started.html
